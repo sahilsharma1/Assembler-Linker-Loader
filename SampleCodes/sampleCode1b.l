@@ -1,0 +1,13 @@
+JMP #4
+DB 4
+LDA $a
+MOV B,A
+LDA #3
+SUB B
+JP &&&0
+JZ &&&0
+LDA $a
+MOV B,A
+LDA $a
+ADD B
+STA $a
